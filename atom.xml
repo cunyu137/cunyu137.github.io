@@ -1,46 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>cunyu的个人博客</title>
   
+  <subtitle>Web安全学习 / 渗透测试 / 逆向</subtitle>
+  <link href="https://cunyu137.github.io/atom.xml" rel="self"/>
   
+  <link href="https://cunyu137.github.io/"/>
+  <updated>2025-12-09T03:09:45.431Z</updated>
+  <id>https://cunyu137.github.io/</id>
+  
+  <author>
+    <name>cunyu</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
     <title>待做事项记录</title>
-    <link href="/2025/12/09/%E5%BE%85%E5%81%9A/"/>
-    <url>/2025/12/09/%E5%BE%85%E5%81%9A/</url>
+    <link href="https://cunyu137.github.io/2025/12/09/%E5%BE%85%E5%81%9A/"/>
+    <id>https://cunyu137.github.io/2025/12/09/%E5%BE%85%E5%81%9A/</id>
+    <published>2025-12-09T02:58:48.127Z</published>
+    <updated>2025-12-09T03:09:45.431Z</updated>
     
     <content type="html"><![CDATA[<h2 id="小迪安全web-2023"><a href="#小迪安全web-2023" class="headerlink" title="小迪安全web 2023"></a>小迪安全web 2023</h2><p>   第67天(2025.12.9)<br>   jndi注入   额 前边的开发课程忘了  看不太懂  后边重新看一遍</p>]]></content>
     
     
+      
+      
+    <summary type="html">&lt;h2 id=&quot;小迪安全web-2023&quot;&gt;&lt;a href=&quot;#小迪安全web-2023&quot; class=&quot;headerlink&quot; title=&quot;小迪安全web 2023&quot;&gt;&lt;/a&gt;小迪安全web 2023&lt;/h2&gt;&lt;p&gt;   第67天(2025.12.9)&lt;br&gt;   jndi注</summary>
+      
+    
+    
+    
     
   </entry>
   
-  
-  
   <entry>
     <title>我的第一篇博客</title>
-    <link href="/2025/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
-    <url>/2025/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <link href="https://cunyu137.github.io/2025/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/"/>
+    <id>https://cunyu137.github.io/2025/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</id>
+    <published>2025-12-08T14:44:00.000Z</published>
+    <updated>2025-12-09T02:44:41.081Z</updated>
     
     <content type="html"><![CDATA[<p>hexo搭建的个人博客测试</p><p>发现记不住东西，时常需要看别人的笔记来复习，很抓马啊</p><p>遂决定自己开始写一写 划划水 方便自己复习   同时加强一下自己的理解</p>]]></content>
     
     
+      
+      
+    <summary type="html">&lt;p&gt;hexo搭建的个人博客测试&lt;/p&gt;
+&lt;p&gt;发现记不住东西，时常需要看别人的笔记来复习，很抓马啊&lt;/p&gt;
+&lt;p&gt;遂决定自己开始写一写 划划水 方便自己复习   同时加强一下自己的理解&lt;/p&gt;
+</summary>
+      
+    
+    
+    
     
   </entry>
   
-  
-  
   <entry>
     <title>Hello World</title>
-    <link href="/2025/12/08/hello-world/"/>
-    <url>/2025/12/08/hello-world/</url>
+    <link href="https://cunyu137.github.io/2025/12/08/hello-world/"/>
+    <id>https://cunyu137.github.io/2025/12/08/hello-world/</id>
+    <published>2025-12-08T14:40:20.703Z</published>
+    <updated>2025-12-08T14:39:02.623Z</updated>
     
     <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+      
+    
+    
+    
     
   </entry>
   
-  
-  
-  
-</search>
+</feed>
