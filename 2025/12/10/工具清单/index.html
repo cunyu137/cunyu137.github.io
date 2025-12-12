@@ -19,21 +19,21 @@
   <meta name="author" content="cunyu">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第67天(2025.12.9)   jndi注入   额 前边的开发课程忘了  看不太懂  后边重新看一遍">
+    <meta name="description" content="1. 反编译工具 uncompyle6 (pyc to py)  uncompyle6 -o test.py test.pyc  pyinstxtractor-master  (exe to pyc)反编译  命令：python pyinstxtractor.py [filename]   2. 文件分离工具 foremost  文件分离工具  foremost.exe -i 需要分离的文件路径">
 <meta property="og:type" content="article">
-<meta property="og:title" content="待做事项">
-<meta property="og:url" content="https://cunyu137.github.io/2025/12/09/%E5%BE%85%E5%81%9A%E4%BA%8B%E9%A1%B9/index.html">
+<meta property="og:title" content="工具清单">
+<meta property="og:url" content="https://cunyu137.github.io/2025/12/10/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/index.html">
 <meta property="og:site_name" content="cunyu的个人博客">
-<meta property="og:description" content="第67天(2025.12.9)   jndi注入   额 前边的开发课程忘了  看不太懂  后边重新看一遍">
+<meta property="og:description" content="1. 反编译工具 uncompyle6 (pyc to py)  uncompyle6 -o test.py test.pyc  pyinstxtractor-master  (exe to pyc)反编译  命令：python pyinstxtractor.py [filename]   2. 文件分离工具 foremost  文件分离工具  foremost.exe -i 需要分离的文件路径">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2025-12-09T04:12:01.000Z">
-<meta property="article:modified_time" content="2025-12-09T04:32:39.844Z">
+<meta property="article:published_time" content="2025-12-10T08:14:59.000Z">
+<meta property="article:modified_time" content="2025-12-12T17:12:49.651Z">
 <meta property="article:author" content="cunyu">
 <meta name="twitter:card" content="summary_large_image">
   
   
   
-  <title>待做事项 - cunyu的个人博客</title>
+  <title>工具清单 - cunyu的个人博客</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -201,7 +201,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="待做事项"></span>
+            <span id="subtitle" data-typed-text="工具清单"></span>
           
         </div>
 
@@ -212,8 +212,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2025-12-09 12:12" pubdate>
-          December 9, 2025 pm
+        <time datetime="2025-12-10 16:14" pubdate>
+          December 10, 2025 pm
         </time>
       </span>
     
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          42 words
+          1.1k words
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          1 mins
+          9 mins
         
       </span>
     
@@ -272,12 +272,57 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">待做事项</h1>
+            <h1 id="seo-header">工具清单</h1>
             
             
               <div class="markdown-body">
                 
-                <h1 id="第67天-2025-12-9"><a href="#第67天-2025-12-9" class="headerlink" title="第67天(2025.12.9)"></a>第67天(2025.12.9)</h1><p>   jndi注入   额 前边的开发课程忘了  看不太懂  后边重新看一遍</p>
+                <h1 id="1-反编译工具"><a href="#1-反编译工具" class="headerlink" title="1. 反编译工具"></a>1. 反编译工具</h1><ol>
+<li><p>uncompyle6 (pyc to py)<br>  uncompyle6 -o test.py test.pyc</p>
+</li>
+<li><p>pyinstxtractor-master  (exe to pyc)<br>反编译  命令：python pyinstxtractor.py [filename]</p>
+</li>
+</ol>
+<h1 id="2-文件分离工具"><a href="#2-文件分离工具" class="headerlink" title="2. 文件分离工具"></a>2. 文件分离工具</h1><ol>
+<li>foremost  文件分离工具<br>  foremost.exe -i 需要分离的文件路径</li>
+</ol>
+<ul>
+<li>注意：需要分离的文件必须与<code>foremost.exe</code>在同一文件夹下。</li>
+</ul>
+<h1 id="3-web工具"><a href="#3-web工具" class="headerlink" title="3. web工具"></a>3. web工具</h1><h2 id="1-java"><a href="#1-java" class="headerlink" title="1. java"></a>1. java</h2><ol>
+<li>jwt修改</li>
+</ol>
+<ul>
+<li>jwt_tool</li>
+</ul>
+<ol start="2">
+<li>springboot框架</li>
+<li></li>
+</ol>
+<h2 id="2-PHP"><a href="#2-PHP" class="headerlink" title="2. PHP"></a>2. PHP</h2><h3 id="反序列化"><a href="#反序列化" class="headerlink" title="反序列化"></a>反序列化</h3><ul>
+<li><strong>PHPGGC</strong> (kali)<br>linux环境下；windows可能也能安装<br>常用命令：<br>kali 默认路径执行 phpggc -l<blockquote>
+<p>php phpggc -l Laravel : 按照框架筛选利用链<br>php phpggc -i Laravel&#x2F;RCE16 : 查看链详细内容<br>php phpggc Laravel&#x2F;RCE4 <function> <parameter><br>php phpggc … –url : url编码(可叠加)<br>php phpggc … –soft-url : “软” URL 编码（只编码必要字符）<br>php phpggc … –base64 : base64编码<br>php phpggc … –plus-numbers : 加号绕过<br>php phpggc … –fast-destruct : unserialize() 后立即触发 __destruct，提高稳定性<br>‘</p>
+</blockquote>
+</li>
+<li></li>
+</ul>
+<h2 id="3-sql"><a href="#3-sql" class="headerlink" title="3. sql"></a>3. sql</h2><ol>
+<li>sqlmap</li>
+</ol>
+<h2 id="XSS"><a href="#XSS" class="headerlink" title="XSS"></a>XSS</h2><ol>
+<li><p><strong>beef</strong>：XSS接受平台（kali）<br>用法：sudo beef-xss  (启动  任意目录)<br>访问：http:&#x2F;&#x2F;‘192.168.111.28’:3000&#x2F;ui&#x2F;panel    ip为kali的IP 每次使用具体经行替换   物理主机也可以访问   主机要非校园网环境下<br>用户名&#x2F;密码： beef&#x2F;123456</p>
+</li>
+<li><p><strong>XSStrike</strong>  自动化XSS注入（Windows）</p>
+</li>
+</ol>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="Burpsuit"><a href="#Burpsuit" class="headerlink" title="Burpsuit"></a>Burpsuit</h3><p>JsEncrypter插件下载 (未下载)<br>swagger(未安装）<br>sprinhboot  插件  burpsrt</p>
+<h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><ol>
+<li><p><strong>ARL灯塔</strong>（Windows）：企业资产信息搜集<br>‘<a target="_blank" rel="noopener" href="https://127.0.0.1:5003/">https://127.0.0.1:5003</a>‘ 默认5003端口<br>启动：’docker-compose up -d’<br>用户名&#x2F;密码：admin&#x2F;honmashironeko</p>
+</li>
+<li><p><strong>Packer-Fuzzer</strong>（windows）<br>用法：</p>
+</li>
+</ol>
+<p><strong>Packer-Fuzz</strong>(windows)<br>用法：’ python PackerFuzzer.py -u <a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/">http://testphp.vulnweb.com/</a> ‘</p>
 
                 
               </div>
@@ -296,7 +341,7 @@
     
       <span class="category-chain">
         
-  <a href="/categories/%E5%BE%85%E5%81%9A%E4%BA%8B%E9%A1%B9/" class="category-chain-item">待做事项</a>
+  <a href="/categories/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/" class="category-chain-item">工具清单</a>
   
   
 
@@ -316,8 +361,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>待做事项</div>
-      <div>https://cunyu137.github.io/2025/12/09/待做事项/</div>
+      <div>工具清单</div>
+      <div>https://cunyu137.github.io/2025/12/10/工具清单/</div>
     </div>
     <div class="license-meta">
       
@@ -329,7 +374,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>Posted on</div>
-          <div>December 9, 2025</div>
+          <div>December 10, 2025</div>
         </div>
       
       
@@ -361,9 +406,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2025/12/09/%E7%AC%AC69%E5%A4%A9%20-%20WebJava%E5%AE%89%E5%85%A8&amp;&amp;JWT%E6%94%BB%E9%98%B2%20%E4%B8%8E%20%E7%9B%91%E6%8E%A7%E7%BB%84%E4%BB%B6%E6%B3%84%E9%9C%B2/" title="第69天 - Web/Java安全、JWT攻防 与 监控组件泄露">
+                      <a href="/2025/12/11/Web%E6%BC%8F%E6%B4%9E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/" title="Web漏洞学习笔记">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">第69天 - Web/Java安全、JWT攻防 与 监控组件泄露</span>
+                        <span class="hidden-mobile">Web漏洞学习笔记</span>
                         <span class="visible-mobile">Previous</span>
                       </a>
                     
@@ -371,8 +416,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2025/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/" title="我的第一篇博客">
-                        <span class="hidden-mobile">我的第一篇博客</span>
+                      <a href="/2025/12/09/%E7%AC%AC70%E5%A4%A9-Python%E5%AE%89%E5%85%A8-SSTI%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5-%E9%A1%B9%E7%9B%AE%E5%B7%A5%E5%85%B7/" title="第70天-Python安全&amp;SSTI模板注入&amp;项目工具">
+                        <span class="hidden-mobile">第70天-Python安全&amp;SSTI模板注入&amp;项目工具</span>
                         <span class="visible-mobile">Next</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
