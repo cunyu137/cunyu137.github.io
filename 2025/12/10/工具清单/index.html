@@ -27,7 +27,7 @@
 <meta property="og:description" content="1. 反编译工具 uncompyle6 (pyc to py)  uncompyle6 -o test.py test.pyc  pyinstxtractor-master  (exe to pyc)反编译  命令：python pyinstxtractor.py [filename]   2. 文件分离工具 foremost  文件分离工具  foremost.exe -i 需要分离的文件路径">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2025-12-10T08:14:59.000Z">
-<meta property="article:modified_time" content="2025-12-12T17:12:49.651Z">
+<meta property="article:modified_time" content="2025-12-13T15:31:55.667Z">
 <meta property="article:author" content="cunyu">
 <meta name="twitter:card" content="summary_large_image">
   
@@ -224,7 +224,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k words
+          1.8k words
         
       </span>
     
@@ -235,7 +235,7 @@
         
         
         
-          9 mins
+          15 mins
         
       </span>
     
@@ -301,10 +301,17 @@
 </ol>
 <h2 id="2-PHP"><a href="#2-PHP" class="headerlink" title="2. PHP"></a>2. PHP</h2><h3 id="反序列化"><a href="#反序列化" class="headerlink" title="反序列化"></a>反序列化</h3><ul>
 <li><strong>PHPGGC</strong> (kali)<br>linux环境下；windows可能也能安装<br>常用命令：<br>kali 默认路径执行 phpggc -l<blockquote>
-<p>php phpggc -l Laravel : 按照框架筛选利用链<br>php phpggc -i Laravel&#x2F;RCE16 : 查看链详细内容<br>php phpggc Laravel&#x2F;RCE4 <function> <parameter><br>php phpggc … –url : url编码(可叠加)<br>php phpggc … –soft-url : “软” URL 编码（只编码必要字符）<br>php phpggc … –base64 : base64编码<br>php phpggc … –plus-numbers : 加号绕过<br>php phpggc … –fast-destruct : unserialize() 后立即触发 __destruct，提高稳定性<br>‘</p>
+<p>php phpggc -l Laravel : 按照框架筛选利用链<br>php phpggc -i Laravel&#x2F;RCE16 : 查看链详细内容<br>php phpggc Laravel&#x2F;RCE4 <function> <parameter><br>php phpggc … –url : url编码(可叠加)<br>php phpggc … –soft-url : “软” URL 编码（只编码必要字符）<br>php phpggc … –base64 : base64编码<br>php phpggc … –plus-numbers : 加号绕过<br>php phpggc … –fast-destruct : unserialize() 后立即触发 __destruct，提高稳定性</p>
 </blockquote>
 </li>
-<li></li>
+</ul>
+<h2 id="3-JAVA"><a href="#3-JAVA" class="headerlink" title="3. JAVA"></a>3. JAVA</h2><ol>
+<li>反序列化：</li>
+</ol>
+<ul>
+<li>ysoserial： <a target="_blank" rel="noopener" href="https://github.com/frohoff/ysoserial">https://github.com/frohoff/ysoserial</a><br>最原始的，下面两个都是基于它的</li>
+<li>SerializedPayloadGenerator： <a target="_blank" rel="noopener" href="https://github.com/NotSoSecure/SerializedPayloadGenerator">https://github.com/NotSoSecure/SerializedPayloadGenerator</a><br>之前讲过的一个集成化环境，基于Windows的.NET服务，搭建比较麻烦</li>
+<li>Yakit： <a target="_blank" rel="noopener" href="https://www.yaklang.com/">https://www.yaklang.com/</a><br>Yakit上的一个插件，图形化界面操作比较简单<br>————————————————</li>
 </ul>
 <h2 id="3-sql"><a href="#3-sql" class="headerlink" title="3. sql"></a>3. sql</h2><ol>
 <li>sqlmap</li>
@@ -315,14 +322,18 @@
 <li><p><strong>XSStrike</strong>  自动化XSS注入（Windows）</p>
 </li>
 </ol>
-<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="Burpsuit"><a href="#Burpsuit" class="headerlink" title="Burpsuit"></a>Burpsuit</h3><p>JsEncrypter插件下载 (未下载)<br>swagger(未安装）<br>sprinhboot  插件  burpsrt</p>
+<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><h3 id="Burpsuit"><a href="#Burpsuit" class="headerlink" title="Burpsuit"></a>Burpsuit</h3><p>JsEncrypter插件</p>
+<p>APIKit （SpringBoot框架漏洞识别）</p>
 <h2 id="信息搜集"><a href="#信息搜集" class="headerlink" title="信息搜集"></a>信息搜集</h2><ol>
-<li><p><strong>ARL灯塔</strong>（Windows）：企业资产信息搜集<br>‘<a target="_blank" rel="noopener" href="https://127.0.0.1:5003/">https://127.0.0.1:5003</a>‘ 默认5003端口<br>启动：’docker-compose up -d’<br>用户名&#x2F;密码：admin&#x2F;honmashironeko</p>
+<li><p><strong>ARL灯塔</strong>（Windows）：企业资产信息搜集<br>‘<a target="_blank" rel="noopener" href="https://127.0.0.1:5003/">https://127.0.0.1:5003</a>‘ 默认5003端口<br>启动：<code>docker-compose up -d</code><br>用户名&#x2F;密码：admin&#x2F;honmashironeko</p>
 </li>
 <li><p><strong>Packer-Fuzzer</strong>（windows）<br>用法：</p>
 </li>
 </ol>
-<p><strong>Packer-Fuzz</strong>(windows)<br>用法：’ python PackerFuzzer.py -u <a target="_blank" rel="noopener" href="http://testphp.vulnweb.com/">http://testphp.vulnweb.com/</a> ‘</p>
+<p><strong>Packer-Fuzz</strong>(windows)<br>用法：<code>python PackerFuzzer.py -u http://testphp.vulnweb.com/ </code></p>
+<p><strong>JNDI</strong><br><strong>JNDI-Injection-Exploit</strong>（kali）:JNDI注入</p>
+<figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre class="line-numbers language-hljs scss">┌──(kali㉿kali)-<span class="hljs-selector-attr">[~/Tool/JNDI-Injection-Exploit]</span><br>└─$ java -jar JNDI-Injection-Exploit-<span class="hljs-number">1.0</span>-SNAPSHOT-<span class="hljs-attribute">all</span><span class="hljs-selector-class">.jar</span> -C ls -<span class="hljs-selector-tag">A</span> <span class="hljs-number">127.0</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class"><code class="language-hljs scss">┌──(kali㉿kali)-<span class="hljs-selector-attr">[~/Tool/JNDI-Injection-Exploit]</span><br>└─$ java -jar JNDI-Injection-Exploit-<span class="hljs-number">1.0</span>-SNAPSHOT-<span class="hljs-attribute">all</span><span class="hljs-selector-class">.jar</span> -C ls -<span class="hljs-selector-tag">A</span> <span class="hljs-number">127.0</span><span class="hljs-selector-class">.0</span><span class="hljs-selector-class">.1</span><br><br><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></td></tr></table></figure>
+<p><strong>SpringBootVulExploit</strong>       (windows 安装没成功启动)<br>SpringBoot 相关漏洞学习资料，利用方法和技巧合集，黑盒安全评估 check list:<br>网址1：<code>https://github.com/LandGrey/SpringBootVulExploit</code>(安装没启动成功)<br>网址2：<code>https://github.com/0x727/SpringBootExploit</code>（未安装）</p>
 
                 
               </div>

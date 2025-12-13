@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Web漏洞学习笔记</title>
+    <url>/2025/12/11/Web%E6%BC%8F%E6%B4%9E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[CSRF定义CSRF受害者完成网站身份验证后，将网站挂在后台，攻击者可以将相关网站的链接发布，当受害者点击恶意链接后，可以绕过网站的身份验证执行恶意代码短链接：某些链接包含传递参数，路径等等，可以通过转成短链接的方式隐藏这些信息以及绕过某些过滤
+管道符&amp; ：前面一个命令无论是否执行，后面的命令都能执行，两个命令都执行&amp;&amp;：前面一个命令执行成功后，才能执行后面一个命令|：前面一个命令无论是否执行，后面的命令都能执行且只执行后面一个||：前面一个命令不能正常执行后，才能执行后面一个命令
+管道符过滤绕过:
+
+部分过滤过滤条件不完整，用其他的管道符绕过
+过滤条件为’| ‘(|后边有空格)，像这样的过滤，可以’|dir’, ‘|’后直接接语句绕过
+
+]]></content>
+  </entry>
+  <entry>
     <title>工具清单</title>
     <url>/2025/12/10/%E5%B7%A5%E5%85%B7%E6%B8%85%E5%8D%95/</url>
     <content><![CDATA[1. 反编译工具
@@ -27,10 +39,17 @@ springboot框架
 
 2. PHP反序列化
 PHPGGC (kali)linux环境下；windows可能也能安装常用命令：kali 默认路径执行 phpggc -l
-php phpggc -l Laravel : 按照框架筛选利用链php phpggc -i Laravel&#x2F;RCE16 : 查看链详细内容php phpggc Laravel&#x2F;RCE4  php phpggc … –url : url编码(可叠加)php phpggc … –soft-url : “软” URL 编码（只编码必要字符）php phpggc … –base64 : base64编码php phpggc … –plus-numbers : 加号绕过php phpggc … –fast-destruct : unserialize() 后立即触发 __destruct，提高稳定性‘
+php phpggc -l Laravel : 按照框架筛选利用链php phpggc -i Laravel&#x2F;RCE16 : 查看链详细内容php phpggc Laravel&#x2F;RCE4  php phpggc … –url : url编码(可叠加)php phpggc … –soft-url : “软” URL 编码（只编码必要字符）php phpggc … –base64 : base64编码php phpggc … –plus-numbers : 加号绕过php phpggc … –fast-destruct : unserialize() 后立即触发 __destruct，提高稳定性
 
 
 
+3. JAVA
+反序列化：
+
+
+ysoserial： https://github.com/frohoff/ysoserial最原始的，下面两个都是基于它的
+SerializedPayloadGenerator： https://github.com/NotSoSecure/SerializedPayloadGenerator之前讲过的一个集成化环境，基于Windows的.NET服务，搭建比较麻烦
+Yakit： https://www.yaklang.com/Yakit上的一个插件，图形化界面操作比较简单————————————————
 
 3. sql
 sqlmap
@@ -41,18 +60,30 @@ beef：XSS接受平台（kali）用法：sudo beef-xss  (启动  任意目录)�
 XSStrike  自动化XSS注入（Windows）
 
 
-插件BurpsuitJsEncrypter插件下载 (未下载)swagger(未安装）sprinhboot  插件  burpsrt
+插件BurpsuitJsEncrypter插件
+APIKit （SpringBoot框架漏洞识别）
 信息搜集
-ARL灯塔（Windows）：企业资产信息搜集‘https://127.0.0.1:5003‘ 默认5003端口启动：’docker-compose up -d’用户名&#x2F;密码：admin&#x2F;honmashironeko
+ARL灯塔（Windows）：企业资产信息搜集‘https://127.0.0.1:5003‘ 默认5003端口启动：docker-compose up -d用户名&#x2F;密码：admin&#x2F;honmashironeko
 
 Packer-Fuzzer（windows）用法：
 
 
-Packer-Fuzz(windows)用法：’ python PackerFuzzer.py -u http://testphp.vulnweb.com/ ‘
+Packer-Fuzz(windows)用法：python PackerFuzzer.py -u http://testphp.vulnweb.com/ 
+JNDIJNDI-Injection-Exploit（kali）:JNDI注入
+┌──(kali㉿kali)-[~/Tool/JNDI-Injection-Exploit]└─$ java -jar JNDI-Injection-Exploit-1.0-SNAPSHOT-all.jar -C ls -A 127.0.0┌──(kali㉿kali)-[~/Tool/JNDI-Injection-Exploit]└─$ java -jar JNDI-Injection-Exploit-1.0-SNAPSHOT-all.jar -C ls -A 127.0.0.1
+SpringBootVulExploit       (windows 安装没成功启动)SpringBoot 相关漏洞学习资料，利用方法和技巧合集，黑盒安全评估 check list:网址1：https://github.com/LandGrey/SpringBootVulExploit(安装没启动成功)网址2：https://github.com/0x727/SpringBootExploit（未安装）
 ]]></content>
       <categories>
         <category>工具清单</category>
       </categories>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2025/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[hexo搭建的个人博客测试
+发现记不住东西，时常需要看别人的笔记来复习，很抓马啊
+遂决定自己开始写一写 划划水 方便自己复习   同时加强一下自己的理解
+]]></content>
   </entry>
   <entry>
     <title>待做事项</title>
@@ -62,36 +93,6 @@ Packer-Fuzz(windows)用法：’ python PackerFuzzer.py -u http://testphp.vulnwe
       <categories>
         <category>待做事项</category>
       </categories>
-  </entry>
-  <entry>
-    <title>Web漏洞学习笔记</title>
-    <url>/2025/12/11/Web%E6%BC%8F%E6%B4%9E%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[CSRF定义CSRF受害者完成网站身份验证后，将网站挂在后台，攻击者可以将相关网站的链接发布，当受害者点击恶意链接后，可以绕过网站的身份验证执行恶意代码短链接：某些链接包含传递参数，路径等等，可以通过转成短链接的方式隐藏这些信息以及绕过某些过滤
-管道符&amp; ：前面一个命令无论是否执行，后面的命令都能执行，两个命令都执行&amp;&amp;：前面一个命令执行成功后，才能执行后面一个命令|：前面一个命令无论是否执行，后面的命令都能执行且只执行后面一个||：前面一个命令不能正常执行后，才能执行后面一个命令
-管道符过滤绕过:
-
-部分过滤过滤条件不完整，用其他的管道符绕过
-过滤条件为’| ‘(|后边有空格)，像这样的过滤，可以’|dir’, ‘|’后直接接语句绕过
-
-]]></content>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2025/12/08/hello-world/</url>
-    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
-Quick StartCreate a new post$ hexo new $ hexo new "My New Post"
-
-More info: Writing
-Run server$ hexo server
-
-More info: Server
-Generate static files$ hexo generate
-
-More info: Generating
-Deploy to remote sites$ hexo deploy
-
-More info: Deployment
-]]></content>
   </entry>
   <entry>
     <title>第69天 - Web/Java安全、JWT攻防 与 监控组件泄露</title>
@@ -141,21 +142,31 @@ jwt验证过程：1.原始头部，payload经过加密算法，加密密钥生�
       </tags>
   </entry>
   <entry>
-    <title>我的第一篇博客</title>
-    <url>/2025/12/08/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[hexo搭建的个人博客测试
-发现记不住东西，时常需要看别人的笔记来复习，很抓马啊
-遂决定自己开始写一写 划划水 方便自己复习   同时加强一下自己的理解
+    <title>第71天-Python安全&amp;序列化反序列化&amp;反编译&amp;格式化字符串</title>
+    <url>/2025/12/11/%E7%AC%AC71%E5%A4%A9-Python%E5%AE%89%E5%85%A8-%E5%BA%8F%E5%88%97%E5%8C%96%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-%E5%8F%8D%E7%BC%96%E8%AF%91-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2025/12/08/hello-world/</url>
+    <content><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post$ hexo new $ hexo new "My New Post"
+
+More info: Writing
+Run server$ hexo server
+
+More info: Server
+Generate static files$ hexo generate
+
+More info: Generating
+Deploy to remote sites$ hexo deploy
+
+More info: Deployment
 ]]></content>
   </entry>
   <entry>
     <title>第70天-Python安全&amp;SSTI模板注入&amp;项目工具</title>
     <url>/2025/12/09/%E7%AC%AC70%E5%A4%A9-Python%E5%AE%89%E5%85%A8-SSTI%E6%A8%A1%E6%9D%BF%E6%B3%A8%E5%85%A5-%E9%A1%B9%E7%9B%AE%E5%B7%A5%E5%85%B7/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>第71天-Python安全&amp;序列化反序列化&amp;反编译&amp;格式化字符串</title>
-    <url>/2025/12/11/%E7%AC%AC71%E5%A4%A9-Python%E5%AE%89%E5%85%A8-%E5%BA%8F%E5%88%97%E5%8C%96%E5%8F%8D%E5%BA%8F%E5%88%97%E5%8C%96-%E5%8F%8D%E7%BC%96%E8%AF%91-%E6%A0%BC%E5%BC%8F%E5%8C%96%E5%AD%97%E7%AC%A6%E4%B8%B2/</url>
     <content><![CDATA[]]></content>
   </entry>
 </search>
